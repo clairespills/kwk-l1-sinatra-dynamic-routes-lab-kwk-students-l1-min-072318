@@ -31,6 +31,6 @@ get '/:operation/:number1/:number2' do
  elsif @operation == "multiply" 
    output = @number1 * @number2
 end
-puts "#{output}"
+ output
 end
 end

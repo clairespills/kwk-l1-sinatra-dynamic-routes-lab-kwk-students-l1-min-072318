@@ -24,12 +24,12 @@ get '/:operation/:number1/:number2' do
  @number2 = params[:number2].to_i
  if @operation == "add" 
    output = @number1 + @number2
- elsif 
-  params[:number1].to_i - params[:number2].to_i
- elsif params[:operation] = "divide"
-  params[:number1].to_i / params[:number2].to_i
- elsif params[:operation] = "multiply"
-  params[:number1].to_i * params[:number2].to_i
+ elsif @operation == "add" 
+   output = @number1 + @number2 
+ elsif @operation == "add" 
+   output = @number1 + @number2 
+ elsif @operation == "multiply" 
+   output = @number1 * @number2
 end
 puts output
 end

@@ -27,10 +27,10 @@ get '/:operation/:number1/:number2' do
  elsif @operation == "subtract" 
    output = @number1 - @number2 
  elsif @operation == "divide" 
-   output = @number1 / @number2 
+   output = (@number1 / @number2).to_s 
  elsif @operation == "multiply" 
-   output = @number1 * @number2
+   output = (@number1 * @number2).to_s
 end
-puts output.to_s
+puts output
 end
 end
